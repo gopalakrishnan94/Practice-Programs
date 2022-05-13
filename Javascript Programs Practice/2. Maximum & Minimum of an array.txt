@@ -1,6 +1,8 @@
-// One Way
+// 2. Maximum & Minimum of an array
 
 -----------------------------
+
+// One Way
 
 var arr = [1001, 3, 1834, 112, 1342455, 324];
 var max = 0;
