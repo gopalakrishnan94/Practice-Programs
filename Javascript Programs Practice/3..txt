@@ -1,0 +1,12 @@
+// Kth smallest element
+
+-------------------------------------------
+
+// One Way
+
+var arr = [7,10,4,3,20,15];
+var k = 3;
+var res = arr.sort((a, b) => {return a-b});
+console.log(res[k-1]);
+
+--------------------------------------------

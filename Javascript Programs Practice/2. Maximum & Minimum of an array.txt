@@ -1,0 +1,39 @@
+// One Way
+
+-----------------------------
+
+var arr = [1001, 3, 1834, 112, 1342455, 324];
+var max = 0;
+var min = 0;
+max = Math.max(...arr);
+min = Math.min(...arr);
+console.log(max);
+console.log(min);
+
+-----------------------------
+
+// Another Way
+
+var arr = [1001, 3, 1834, 112, 1342455, 324];
+var max = null;
+var min = null;
+arr.forEach((x) => {
+    if (max) {  
+        if (x > max) {
+            max = x;
+        } 
+    } else {
+        max = x;
+    }
+    if (min) {  
+        if (x < min) {
+            min = x;
+        } 
+    } else {
+        min = x;
+    }
+})
+console.log(max);
+console.log(min);
+
+-----------------------------
