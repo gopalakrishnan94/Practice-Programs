@@ -1,0 +1,7 @@
+// Remove Duplicates from a String
+
+// One Way
+
+var inp = "geeksforgeeks";
+var res = [...new Set(inp)].join("");
+console.log(res)

@@ -1,0 +1,66 @@
+// Alphabet Pattern
+
+------------------------------------
+
+// First
+
+var n = 5;
+var inp = "";
+for (var i = 0; i <= n; i++) {
+    for (var j = 0; j < i; j++) {
+        inp += String.fromCharCode(j + 65);
+    }
+    inp += "\n"
+}
+console.log(inp);
+----------------
+Output:
+node /tmp/VbneMqgPjO.js
+A
+AB
+ABC
+ABCD
+ABCDE
+------------------------------------
+
+// Second
+
+var n = 5;
+var inp = "";
+for (var i = 0; i <= n; i++) {
+    for (var k = 0; k < n - i; k++) {
+        inp += " ";
+    }
+    for (var j = 0; j < i; j++) {
+        inp += String.fromCharCode(j + 65)
+    }
+    inp += "\n"
+}
+console.log(inp)
+----------------
+Output:
+node /tmp/VbneMqgPjO.js
+A
+   AB
+  ABC
+ ABCD
+ABCDE
+------------------------------------
+
+var n = 5;
+var inp = "";
+for (var i = 0; i <= n; i++) {
+    for (var j = 0; j < i; j++) {
+        inp += String.fromCharCode((i-1) + 65)
+    }
+    inp += "\n"
+}
+console.log(inp)
+----------------
+Output:
+A
+BB
+CCC
+DDDD
+EEEEE
+------------------------------------

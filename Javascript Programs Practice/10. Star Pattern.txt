@@ -1,0 +1,119 @@
+// Star Pattern
+
+------------------------------------
+
+// First
+
+var n = 5;
+var inp = "";
+for (var i = 0; i <= n; i++) {
+    for (var j = 0; j < i; j++) {
+        inp += "*"
+    }
+    inp += "\n"
+}
+console.log(inp);
+----------------
+Output:
+*
+**
+***
+****
+*****
+------------------------------------
+
+// Second
+
+var n = 5;
+var inp = "";
+for (var i = 0; i <= n; i++) {
+    for (var k = 0; k < n - i; k++) {
+        inp += " ";
+    }
+    for (var j = 0; j < i; j++) {
+        inp += "*"
+    }
+    inp += "\n"
+}
+console.log(inp)
+----------------
+Output:
+*
+   **
+  ***
+ ****
+*****
+------------------------------------
+
+// Third
+
+var n = 5;
+var inp = " ";
+for (var i = 0; i < n; i++) {
+    for (var j = 0; j < n; j++) {
+        inp += "*"
+    }
+    inp += "\n"
+}
+console.log(inp)
+----------------
+Output:
+*****
+*****
+*****
+*****
+*****
+------------------------------------
+
+// Forth
+
+var n = 5;
+var inp = " ";
+for (var i = 0; i < n; i++) {
+    for (var j = 0; j < n; j++) {
+        if ((i == 0) || (i == n-1)) {
+            inp += "*"
+        } else {
+            if ((j == 0) || (j == n-1)) {
+                inp += "*"
+            } else {
+                inp += " "
+            }
+        }
+        
+    }
+    inp += "\n"
+}
+console.log(inp)
+----------------
+Output:
+*****
+*   *
+*   *
+*   *
+*****
+------------------------------------
+
+// Fifth
+
+var n = 5;
+var inp = " ";
+for (var i = 0; i < n; i++) {
+    for (var j = 0; j < i; j++) {
+        inp += " "
+    }
+    for (var k = 0; k < n - i; k++) {
+        inp += "*";
+    }
+    inp += "\n"
+}
+console.log(inp)
+----------------
+Output:
+node /tmp/VbneMqgPjO.js
+*****
+ ****
+  ***
+   **
+    *
+------------------------------------
